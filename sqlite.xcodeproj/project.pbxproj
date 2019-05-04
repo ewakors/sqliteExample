@@ -12,6 +12,8 @@
 		C61FFAA022725771009FD426 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61FFA9E22725771009FD426 /* Main.storyboard */; };
 		C61FFAA222725774009FD426 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C61FFAA122725774009FD426 /* Assets.xcassets */; };
 		C61FFAA522725774009FD426 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C61FFAA322725774009FD426 /* LaunchScreen.storyboard */; };
+		C620D42D2279DCD400F81176 /* SantaClaus.db in Resources */ = {isa = PBXBuildFile; fileRef = C620D42C2279DCD400F81176 /* SantaClaus.db */; };
+		C620D434227E413300F81176 /* StopWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = C620D433227E413300F81176 /* StopWatch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		C61FFAA122725774009FD426 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C61FFAA422725774009FD426 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C61FFAA622725774009FD426 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C620D42C2279DCD400F81176 /* SantaClaus.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = SantaClaus.db; sourceTree = "<group>"; };
+		C620D433227E413300F81176 /* StopWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopWatch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,32 @@
 		C61FFA9922725771009FD426 /* sqlite */ = {
 			isa = PBXGroup;
 			children = (
-				C61FFA9A22725771009FD426 /* AppDelegate.swift */,
+				C620D432227AE05F00F81176 /* App */,
+				C620D430227ADFCD00F81176 /* Model */,
+				C620D42C2279DCD400F81176 /* SantaClaus.db */,
 				C61FFA9C22725771009FD426 /* ViewController.swift */,
 				C61FFA9E22725771009FD426 /* Main.storyboard */,
 				C61FFAA122725774009FD426 /* Assets.xcassets */,
 				C61FFAA322725774009FD426 /* LaunchScreen.storyboard */,
-				C61FFAA622725774009FD426 /* Info.plist */,
+				C620D433227E413300F81176 /* StopWatch.swift */,
 			);
 			path = sqlite;
+			sourceTree = "<group>";
+		};
+		C620D430227ADFCD00F81176 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C620D432227AE05F00F81176 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C61FFA9A22725771009FD426 /* AppDelegate.swift */,
+				C61FFAA622725774009FD426 /* Info.plist */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +147,7 @@
 				C61FFAA522725774009FD426 /* LaunchScreen.storyboard in Resources */,
 				C61FFAA222725774009FD426 /* Assets.xcassets in Resources */,
 				C61FFAA022725771009FD426 /* Main.storyboard in Resources */,
+				C620D42D2279DCD400F81176 /* SantaClaus.db in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +158,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C620D434227E413300F81176 /* StopWatch.swift in Sources */,
 				C61FFA9D22725771009FD426 /* ViewController.swift in Sources */,
 				C61FFA9B22725771009FD426 /* AppDelegate.swift in Sources */,
 			);
@@ -283,7 +307,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = sqlite/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/sqlite/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +324,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = sqlite/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/sqlite/App/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
